@@ -101,7 +101,7 @@ image. By implementing a model which can reconstruct multiple frames for dynamic
 images, it enables to capture fast biological dynamic events through scattering biological
 tissue for a large imaging FoV. 
 
-### METHODOLOGY
+## METHODOLOGY
 
 Our approach can be mainly divided into three parts as we mentioned in the objectives.
 
@@ -151,7 +151,7 @@ Eg: From the second task we obtain the sum of 1000 either static or dynamic. Usi
 we obtain a frame taken at the 𝑗th time instance(in the 0-1000 time range), which contain
 the sum of both static and dynamic parts. 
 
-### Conclusion drawn of the initial results
+## Conclusion Drawn of the Initial Results
 
 Initially, we were able to generate some images using the PSTPM images by applying the
 forward model, we discussed in the methodology.
