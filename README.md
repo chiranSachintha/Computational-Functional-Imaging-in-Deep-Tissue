@@ -1,4 +1,4 @@
-# de-blurring-technique-with-GAN
+# Computational Functional Imaging in Deep Tissue
 **final-year-project(Collaborative project with Harvard University, Cambridge, USA)**
 
 ## ABSTRACT
