@@ -66,83 +66,48 @@ field of view. They require the same number of illumination patterns as the numb
 in the imaged field of view. Thus, no evident speed up over Point Scanning Two-Photon
 Microscopy (PSTPM) was demonstrated. 
 
-![alt text](https://drive.google.com/open?id=17YxaR9WTKepwcgE2t8j2B1rQppV3I4GU)
-### Prerequisites
+![scattered image](Images/2.png)
 
-What things you need to install the software and how to install them
+In Professor Peter So’s group in Massachusetts Institute of Technology (MIT), they have
+developed a computational imaging technique to see a large field of views with two-photon
+microscopy. They are also using a set of patterns, but the emission light is detected by a
+camera. The camera is used to obtain a large field of view at the detector.
+In practice, TFM images are minimally affected by scattering at or near the surface; as the
+imaging depth increases, scattering gradually degrades only the high-frequency
+information in the images.
+DEEP-TFM combines the information about the excitation patterns with the acquired
+images, to computationally reconstruct a de-scattered image.
 
-```
-Give examples
-```
+Experimentally, to de-scatter a single FoV, multiple patterned excitations (and images) are
+needed; the number depends on the loss of high-frequency information due to scattering,
+and hence on the imaging depth.
 
-### Installing
+That group has developed a mathematical model for reconstructing images using the
+patterns and the acquired images in each image plane. However, the existing model is timeconsuming and not suitable for dynamic image reconstruction.
+Objectives of our project:
 
-A step by step series of examples that tell you how to get a development env running
+1. Simulation of a synthetic dataset.
+2. One frame reconstruction for static images.
+3. Multiple image frame reconstruction for dynamic images.
 
-Say what the step will be
+### Main Novelty of the project:
 
-```
-Give the example
-```
+DEEP-TFM is a novel computational wide-field technology for deep tissue multiphoton
+microscopy. DEEP-TFM can resolve images with similar quality to point scanning twophoton microscopy for static images with the existing reconstruction algorithm. That
+approach of DEEP-TFM is FoV independent. Our goal is the obtain multiple frames for
+dynamic images obtained from DEEP-TFM. This is a novel concept as these microscopes
+are mainly used for capturing static images. For living tissues, it is hard to obtain a static
+image. By implementing a model which can reconstruct multiple frames for dynamic
+images, it enables to capture fast biological dynamic events through scattering biological
+tissue for a large imaging FoV. 
 
-And repeat
+### METHODOLOGY
 
-```
-until finished
-```
+Our approach can be mainly divided into three parts as we mentioned in the objectives.
 
-End with an example of getting some data out of the system or using it for a little demo
+1. Simulation of synthetic dataset
+2. Developing a model for one frame reconstruction for the static images.
+3. Developing a model for multi-frame reconstruction for the dynamic images.
 
-## Running the tests
+![](synthetic%20dataset.PNG)
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
